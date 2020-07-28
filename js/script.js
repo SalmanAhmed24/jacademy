@@ -1,0 +1,24 @@
+AOS.init();
+$('#header-slider').owlCarousel({
+  loop:true,
+  margin:0,
+  nav:true,
+  items:1
+});
+$('#course-slider').owlCarousel({
+  loop:true,
+  margin:10,
+  nav:true,
+  items:4,
+  responsive:{
+      480:{
+          items:1
+      },
+      900:{
+          items:2
+      },
+      1000:{
+          items:3
+      }
+  }
+})

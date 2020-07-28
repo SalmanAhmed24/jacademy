@@ -1,0 +1,106 @@
+@mixin flexRowWrapCenter {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+    flex-flow: wrap;
+    flex-wrap: wrap;
+    width: 100%;      
+}
+@mixin flexColumnCenter {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flexColumnStart {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+@mixin flexColumn {
+    display: flex !important;
+    flex-direction: column;
+}
+@mixin flexRowWrap {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-flow: wrap;
+    flex-wrap: wrap;
+}
+@mixin flexRowCenter {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+@mixin btnCustom {
+    .btn-wrap{
+        margin-top:3em;
+        margin-bottom: 1em;
+        .btn-cus{
+            color: #fff;
+            padding:1em 2em;
+            margin-top: 2em;
+            text-decoration: none;
+            font-size: 1.4em;
+            text-transform: uppercase;
+            background-color: #000;
+            border-radius: 8px;
+            transition: 0.3s ease-in-out;
+                .arrow{
+                    opacity: 0;
+                    transition: 0.3s ease-in-out;
+                    padding-left: 0.5em;
+                    font-size: 0.1em;
+                }
+                &:hover{
+                    .arrow{
+                        opacity: 1;
+                        font-size: 1em;
+                    }
+                }
+        }
+    }
+}
+@mixin sub-h {
+    .sub-h{
+        font-size: 2em;
+        font-weight: 500;
+        text-align: center;
+        text-transform: capitalize;
+        position: relative;
+        padding-bottom: 0.5em;
+            &::before{
+                content: '';
+                width: 100%;
+                height: 3px;
+                background-color: #0aadac;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+            }
+    }
+}
+@mixin main-h {
+    .main-h{
+        font-size: 3.5em;
+        font-weight: 600;
+        text-transform: uppercase;
+        color:#000;
+        margin-top: 0.5em;
+        margin-bottom:0.5em;
+        text-align: center;
+    }
+}
+@mixin main-p {
+    .main-p{
+        font-size: 1.6em;
+        font-weight: 300;
+        text-align: left;
+        margin-bottom: 2em;
+        line-height: 2.1em;
+    }
+}
