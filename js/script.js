@@ -11,11 +11,11 @@ $('#course-slider').owlCarousel({
   nav:true,
   items:4,
   responsive:{
-      480:{
+      0:{
           items:1
       },
       900:{
-          items:2
+          items:3
       },
       1000:{
           items:3

@@ -205,6 +205,9 @@ body {
   font-size: 10px;
   font-family: 'Montserrat'; }
 
+.navbar-toggler:focus {
+  outline: none; }
+
 .logo-wrap {
   display: flex !important;
   flex-direction: row;
@@ -226,10 +229,14 @@ body {
       font-weight: 500;
       text-transform: uppercase; }
 
+#navbarNavDropdown {
+  justify-content: flex-end; }
+
 .main-header .cus-nav-wrap {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.9); }
   .main-header .cus-nav-wrap .cus-navbar {
+    justify-content: flex-end;
     padding: 1.5em;
     width: 100%; }
 
@@ -300,6 +307,9 @@ body {
     margin-top: 0.5em;
     font-size: 1.6em;
     color: #fff; }
+    @media screen and (min-width: 200px) and (max-width: 767.67px) {
+      .slider-h .main-p {
+        width: 100%; } }
   .slider-h .btn-wrap {
     margin-top: 3em;
     margin-bottom: 1em; }
@@ -342,7 +352,13 @@ body {
   top: 0;
   bottom: 0;
   left: 0;
-  margin: auto 0; }
+  margin: auto 0;
+  height: 70px; }
+  @media screen and (min-width: 200px) and (max-width: 767.67px) {
+    #header-slider .owl-nav {
+      margin: 0;
+      bottom: 35px;
+      top: auto; } }
   #header-slider .owl-nav button span {
     font-size: 7em;
     color: #fff;
@@ -410,7 +426,7 @@ body {
     color: #000;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
-    text-align: center; }
+    text-align: left; }
   .about-con .main-p {
     font-size: 1.6em;
     font-weight: 300;
@@ -482,7 +498,9 @@ body {
     color: #000;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
-    text-align: center; }
+    text-align: left; }
+  .courses-h-con .main-h {
+    text-align: center !important; }
 
 .course-card {
   border-radius: 8px;

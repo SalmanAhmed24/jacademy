@@ -6,6 +6,11 @@ body{
     font-size: 10px;
     font-family: 'Montserrat';
 }
+.navbar-toggler{
+    &:focus{
+        outline: none;
+    }
+}
 .logo-wrap{
     @include flexRowWrapCenter;
 
@@ -24,11 +29,15 @@ body{
             }
         }
 }
+#navbarNavDropdown{
+    justify-content: flex-end;
+}
 .main-header{
         .cus-nav-wrap{
             width: 100%;
             background-color:transparentize($color: #000000, $amount: 0.1);
             .cus-navbar{
+            justify-content: flex-end;
                 padding: 1.5em;
                 // background-color: #3cb4b1;
                 width: 100%;
@@ -115,6 +124,9 @@ body{
             margin-top: 0.5em;
             font-size: 1.6em;
             color: #fff;
+                @include from-200-to-768{
+                    width:100%;
+                }
         }
         @include btnCustom;
 }
@@ -138,6 +150,12 @@ body{
     bottom: 0;
     left: 0;
     margin: auto 0;
+    height: 70px;
+        @include from-200-to-768{
+            margin: 0;
+            bottom: 35px;
+            top:auto
+        }
     button{
         span{
             font-size: 7em;
@@ -199,7 +217,10 @@ body{
 .courses-h-con{
     @include flexColumnCenter;
     @include sub-h;
-    @include main-h;   
+    @include main-h;
+    .main-h{
+        text-align: center !important;
+    }   
 }
 .course-card{
     border-radius: 8px;
